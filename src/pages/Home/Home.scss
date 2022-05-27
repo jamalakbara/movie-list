@@ -1,0 +1,16 @@
+.home{
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(4, calc(100% / 4));
+        place-items: center;
+        grid-row-gap: 20px;
+    }
+    &__anchor{
+        aspect-ratio: 10 / 16;
+    }
+    &__image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

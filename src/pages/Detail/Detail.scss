@@ -1,0 +1,22 @@
+.detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__image{
+        aspect-ratio: 10 / 16;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__detail{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+    }
+}
