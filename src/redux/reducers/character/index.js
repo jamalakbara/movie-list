@@ -5,12 +5,12 @@ const initialState = {
 
 const movieReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'REQUEST_MOVIES':
+        case 'REQUEST_CHARACTERS':
             return {
                 ...state,
                 loading: true,
             }
-        case 'SUCCESSED_MOVIES':
+        case 'SUCCESSED_CHARACTERS':
             console.log(state);
             console.log(action.payload.data);
             return {
@@ -18,7 +18,7 @@ const movieReducer = (state = initialState, action) => {
                 loading: false,
                 data: action.payload.data,
             }
-        case 'FAILED_MOVIES':
+        case 'FAILED_CHARACTERS':
             return {
                 ...state,
                 loading: false,

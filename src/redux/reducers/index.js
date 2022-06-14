@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
-import movie from "./movie";
+import character from "./character";
+import location from "./location";
 
 export default combineReducers({
-    movie,
+    character,
+    location
 })
